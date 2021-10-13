@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <script id="fxhash-snippet">
+      var fxhash=new URLSearchParams(window.location.search).get('fxhash')
+      var fxhashValues=fxhash.match(/.{4}/g).map(s=>parseInt(s,16)).map(n=>n/(10**((''+n).length-1))).map(n=>n-(n|0))
+      var fxhashValues2=fxhash.match(/.{8}/g).map(s=>parseInt(s,16)).map(n=>n/(10**((''+n).length-1))).map(n=>n-(n|0))
+</script>
+  </head>
+  <body>
+    Here is my page
+
+    <script src="./script.js"></script>
+  </body>
+</html>
